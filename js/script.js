@@ -4,11 +4,24 @@ const jump = () => {
     const mario = document.querySelector('.mario')
     mario.classList.add('jump')
     jumpAudio.play();
-
+    
     setTimeout(() => {
         mario.classList.remove('jump')
     }, 600)
+    
+    
 }
+
+
+let count = 0
+
+const loopScore = setInterval(() =>{
+    const score = document.querySelector('.score')
+    count = count + 1
+    score.innerHTML = `SCORE  ${count}`
+    console.log(count)
+},500)
+
 
 const loop = setInterval(() => {
 
@@ -37,9 +50,10 @@ const loop = setInterval(() => {
 
         newPageTitle = 'GAME OVER!'
         document.title = newPageTitle
-
-
+        
+        
         clearInterval(loop)
+        clearInterval(loopScore)
         
     }
 }, 10)

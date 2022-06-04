@@ -57,6 +57,16 @@
     transform: scale(1.8)
 }
 
+.score {
+    position: absolute;
+    left: 90vw;
+    font-family: cursive;
+    background: rgb(255, 255, 255);
+    color: rgb(87, 210, 219);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;
