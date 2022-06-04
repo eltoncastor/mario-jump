@@ -12,15 +12,13 @@ const jump = () => {
     
 }
 
-
 let count = 0
-
 const loopScore = setInterval(() =>{
     const score = document.querySelector('.score')
     count = count + 1
     score.innerHTML = `SCORE  ${count}`
     console.log(count)
-},500)
+},250)
 
 
 const loop = setInterval(() => {
@@ -57,5 +55,6 @@ const loop = setInterval(() => {
         
     }
 }, 10)
+
 
 document.addEventListener('keydown', jump)

@@ -47,9 +47,10 @@
     width: 180px;
     height: 110px;
     border: 0;
-    background: white;
+    background: #ffd64e;
     font-family: cursive;
     font-size: 1.5rem;
+    font-weight: bold;
     color: #87CEEB;
     border-radius: 24px;
     cursor: pointer;
@@ -59,12 +60,15 @@
 
 .score {
     position: absolute;
-    left: 90vw;
+    left: 87%;
+    top: 10px;
     font-family: cursive;
-    background: rgb(255, 255, 255);
-    color: rgb(87, 210, 219);
+    font-weight: bold;
+    background: #ffd64e;
+    color: #87CEEB;
     padding: 10px;
     border-radius: 10px;
+    transform: scale(1.25);
 }
 
 @keyframes pipe-animation {
@@ -107,11 +111,11 @@
     from {
         opacity: 0;
         transform: scale(.2);
-        background: #E0F6FF;
+        background: #ffeeb7;
     }
     to {
         opacity: 100%;
         transform: scale(1.8);
-        background: white;
+        background: #ffd64e;
     }
 }
