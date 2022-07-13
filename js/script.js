@@ -1,4 +1,4 @@
-var jumpAudio = new Audio('/audios/mario-jump.mp3')
+var jumpAudio = new Audio('audios/mario-jump.mp3')
 
 const jump = () => {
     const mario = document.querySelector('.mario')
