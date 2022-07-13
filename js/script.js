@@ -18,7 +18,7 @@ const loopScore = setInterval(() =>{
     count = count + 1
     score.innerHTML = `SCORE  ${count}`
     console.log(count)
-},250)
+},100)
 
 
 const loop = setInterval(() => {
@@ -28,7 +28,7 @@ const loop = setInterval(() => {
     const reload = document.querySelector('.reload')
     const pipePosition = pipe.offsetLeft
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '')
-    var gameoverAudio = new Audio('/audios/game-over-audio.mp3');
+    var gameoverAudio = new Audio('audios/game-over-audio.mp3');
 
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 110) {
         gameoverAudio.play();
@@ -39,7 +39,7 @@ const loop = setInterval(() => {
         mario.style.animation = 'none'
         mario.style.bottom = `${marioPosition}px`
 
-        mario.src = '/images/game-over.png'
+        mario.src = 'images/game-over.png'
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
 
